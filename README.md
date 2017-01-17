@@ -20,25 +20,23 @@ Initializing it can be done with the below line of code:
 var hoffline = new HOffine();
 </code>
 <br/>
+
+Followingthe below initialization, will generate the span tag with the necessary status, which gets auto updated every 5 seconds. Complete configurable Hoffline is as below:
 ####params
-Doing this will generate the span tag with the necessary status, which gets auto updated every 5 seconds. Complete configurable Hoffline is as below:
-<code>
-var hoffline = new HOffine({
-    imgurl: "dot.png", // the image url you want to replace, using the website favicon too seems to be logical
-    selectorTag: "span", // the new tag that gets created with the status updates in it
-    selectorNewId: "currentInternetStatus", // the id for the selectorTag (span tag in this case)
-    getStatusOnTimeInterval: 5000, // regular interval for the status to be updated
-    selectorToAppend: "body" // tag to which the selectorTag gets appended 
-                            // [Note: use actual selector here, for div with id="selector", pass "#selector"
-});
-</code>
+    var hoffline = new HOffine({
+        imgurl: "dot.png", // the image url you want to replace, using the website favicon too seems to be logical
+        selectorTag: "span", // the new tag that gets created with the status updates in it
+        selectorNewId: "currentInternetStatus", // the id for the selectorTag (span tag in this case)
+        getStatusOnTimeInterval: 5000, // regular interval for the status to be updated
+        selectorToAppend: "body" // tag to which the selectorTag gets appended 
+                                // [Note: use actual selector here, for div with id="selector", pass "#selector"
+    });
 <br/>
-####methods
+
 Following are the methods added to the prototype object HOffline"
-<code>
-var hoffline = new HOffine();
-hoffline.getStatus(); // gets the current internet connection status
-hoffline.stopTesting(); // clears the timeout interval during which the tests are scheduled
-</code>
+####methods
+    var hoffline = new HOffine();
+    hoffline.getStatus(); // gets the current internet connection status
+    hoffline.stopTesting(); // clears the timeout interval during which the tests are scheduled
     
 You can message me anything that you feel is necessary in this plugin and I will work on it and upload as part of updates.
