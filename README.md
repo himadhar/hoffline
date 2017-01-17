@@ -1,7 +1,7 @@
 # hoffline
 hoffline is jquery based plugin to keep track of current status for internet connection. (This is a work in progress plugin)
 
-The focus of this plugin is to keep track of the internet connection and its status - online or offline. The default navigator object in browsers provide connectivity statuses - 3G//4G or WiFi and so on. But if a user is connected to a internet hotspot which doesn't have internet - device is connected to WiFi but with no internet - then the navigator object is of no use.
+The focus of this plugin is to keep track of the internet connection and its status - online or offline. The default navigator object in browsers provide connectivity statuses - 3G/4G or WiFi and so on. But if a user is connected to a internet hotspot which doesn't have internet - device is connected to WiFi but with no internet - then the navigator object is of no use.
 
 HofflineJS is a (super) light weight plugin to check for internet conneection existence and your login can be around it. 
 
